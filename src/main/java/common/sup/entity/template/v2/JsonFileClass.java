@@ -1,15 +1,16 @@
-package common.sup.template;
+package common.sup.entity.template.v2;
 
 import org.codehaus.jackson.annotate.JsonGetter;
 
 import java.io.Serializable;
-import java.util.ArrayList;
+import java.util.List;
 
 public class JsonFileClass implements Serializable{
-
-
+    
+    public static final long SerialVersionUID = 1L;
+    
     private String version;
-    public ArrayList<JsonParameters> parameters;
+    public List<JsonParameters> parameters;
 
 
 
@@ -26,11 +27,11 @@ public class JsonFileClass implements Serializable{
         return this.version;
     }
     @JsonGetter("parameters")
-    public void setParameters(ArrayList<JsonParameters> parameters) {
+    public void setParameters(List<JsonParameters> parameters) {
         this.parameters = parameters;
     }
 
-    public ArrayList<JsonParameters> setParameters() {
+    public List<JsonParameters> setParameters() {
         return this.parameters;
     }
 }

@@ -1,4 +1,4 @@
-package common.sup.template;
+package common.sup.entity.template.v2;
 
 import org.codehaus.jackson.annotate.JsonPropertyOrder;
 
@@ -13,6 +13,9 @@ import java.util.List;
 
 @JsonPropertyOrder({"name", "description", "isList", "roles", "type", "bundle"})
 public class JsonParameters implements Serializable {
+    
+    public static final long SerialVersionUID = 1L;
+    
     private String name;
     private String description = "";
     private boolean isList;

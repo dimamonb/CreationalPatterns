@@ -1,8 +1,11 @@
-package common.sup.template;
+package common.sup.entity.template.v2;
 
 import java.io.Serializable;
 
 public class Role implements Serializable {
+    
+    public static final long SerialVersionUID = 1L;
+    
     private String role;
 
     public String getRole() {

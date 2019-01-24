@@ -1,9 +1,12 @@
-package common.sup.template;
+package common.sup.entity.template.v2;
 
 import java.io.Serializable;
 import java.util.List;
 
 public class Bundle implements Serializable {
+    
+    public static final long SerialVersionUID = 1L;
+    
     private List<Path> path;
     private List<String> values;
 

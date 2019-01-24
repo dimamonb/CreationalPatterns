@@ -1,8 +1,11 @@
-package common.sup.template;
+package common.sup.entity.template.v2;
 
 import java.io.Serializable;
 
 public class Path  implements Serializable {
+    
+    public static final long SerialVersionUID = 1L;
+    
     private String code;
     private String value;
 

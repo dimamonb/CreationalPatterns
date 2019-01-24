@@ -1,4 +1,4 @@
-package common.sup.da.data;
+package common.sup.entity.template.v1;
 
 import org.codehaus.jackson.annotate.JsonGetter;
 
@@ -41,5 +41,16 @@ public class Parameter implements Serializable{
     private String name;
     List<Path> path;
     String type;
+    
+    @Override
+    public String toString() {
+        return "Parameter{" +
+                       "name='" + name + '\'' +
+                       ", path=" + path +
+                       ", type='" + type + '\'' +
+                       ", values=" + values +
+                       '}';
+    }
+    
     List<String> values;
 }

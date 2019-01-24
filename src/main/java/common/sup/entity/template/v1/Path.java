@@ -1,4 +1,4 @@
-package common.sup.da.data;
+package common.sup.entity.template.v1;
 
 import java.io.Serializable;
 
@@ -9,7 +9,15 @@ public class Path  implements Serializable {
     public String getName() {
         return name;
     }
-
+    
+    @Override
+    public String toString() {
+        return "Path{" +
+                       "name='" + name + '\'' +
+                       ", value='" + value + '\'' +
+                       '}';
+    }
+    
     public void setName(String name) {
         this.name = name;
     }

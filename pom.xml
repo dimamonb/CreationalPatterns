@@ -98,7 +98,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>common.sup.SupGenerator</mainClass>
+                            <mainClass>step1.FileReadSerializeWrite</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
