@@ -1,6 +1,6 @@
 package common.sup.da;
 
-import common.sup.entity.template.v2.JsonParameters;
+import common.sup.entity.template.v3.JsonParameters;
 
 import java.util.List;
 

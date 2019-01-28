@@ -1,4 +1,4 @@
-package common.sup.da;
+package common.sup.da.v1;
 
 import common.sup.entity.template.v1.Fallback;
 import org.codehaus.jackson.map.ObjectMapper;
@@ -6,7 +6,7 @@ import org.codehaus.jackson.map.ObjectMapper;
 import java.io.File;
 import java.io.IOException;
 
-public class JsonParameterReader{
+public class JsonParameterReader {
 
     public Fallback read(String url) throws IOException{
 

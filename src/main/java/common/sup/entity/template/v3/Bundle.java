@@ -1,4 +1,4 @@
-package common.sup.entity.template.v2;
+package common.sup.entity.template.v3;
 
 import java.io.Serializable;
 import java.util.List;

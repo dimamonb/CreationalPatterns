@@ -1,16 +1,12 @@
-package step1;
+package step2;
 
-import common.sup.da.v1.JsonParameterSerializeReader;
-import common.sup.entity.template.v1.Fallback;
+import common.sup.da.v2.JsonParameterSerializeReader;
+import common.sup.entity.template.v2.Fallback;
 import org.codehaus.jackson.map.ObjectMapper;
 
 import java.io.File;
 import java.io.IOException;
 
-
-/**
- * читаем из temp.out
- * */
 public class FileReadSerializeRead {
 	
 	public static void main(String[] args) throws IOException, ClassNotFoundException {

@@ -1,10 +1,8 @@
-package common.sup.da.v2;
+package common.sup.da.v1;
 
-import common.sup.entity.template.v2.Fallback;
+import common.sup.entity.template.v1.Fallback;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.ObjectInputStream;
+import java.io.*;
 
 public class JsonParameterSerializeReader {
 	

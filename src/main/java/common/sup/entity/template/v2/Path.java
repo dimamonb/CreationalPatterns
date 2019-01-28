@@ -4,17 +4,25 @@ import java.io.Serializable;
 
 public class Path  implements Serializable {
     
-    public static final long SerialVersionUID = 1L;
+    private static final long serialVersionUID = 42L;
     
-    private String code;
+    private String name;
     private String value;
 
-    public String getCode() {
-        return code;
+    public String getName() {
+        return name;
     }
-
-    public void setCode(String code) {
-        this.code = code;
+    
+    @Override
+    public String toString() {
+        return "Path{" +
+                       "name='" + name + '\'' +
+                       ", value='" + value + '\'' +
+                       '}';
+    }
+    
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getValue() {

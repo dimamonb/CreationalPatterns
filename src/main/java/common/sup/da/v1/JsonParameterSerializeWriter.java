@@ -1,6 +1,6 @@
-package common.sup.da.v2;
+package common.sup.da.v1;
 
-import common.sup.entity.template.v2.Fallback;
+import common.sup.entity.template.v1.Fallback;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

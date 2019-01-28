@@ -1,9 +1,9 @@
 package common.sup.da.v1;
 
 import common.sup.da.AbstractWriter;
-import common.sup.entity.template.v2.Bundle;
-import common.sup.entity.template.v2.JsonParameters;
-import common.sup.entity.template.v2.Path;
+import common.sup.entity.template.v3.Bundle;
+import common.sup.entity.template.v3.JsonParameters;
+import common.sup.entity.template.v3.Path;
 
 import java.util.ArrayList;
 import java.util.List;

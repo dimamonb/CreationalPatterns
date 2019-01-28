@@ -1,8 +1,8 @@
-package step1;
+package step2;
 
-import common.sup.da.JsonParameterReader;
-import common.sup.da.v1.JsonParameterSerializeWriter;
-import common.sup.entity.template.v1.Fallback;
+import common.sup.da.v2.JsonParameterReader;
+import common.sup.da.v2.JsonParameterSerializeWriter;
+import common.sup.entity.template.v2.Fallback;
 
 /**
  * @author Evgeni Korolev <SBT-Korolev-EE@mail.ca.sbrf.ru>
