@@ -31,6 +31,7 @@ public class Fallback implements Externalizable {
     
     @Override
     public void writeExternal(ObjectOutput out) throws IOException {
+        System.out.println("Список параметров: " + this.getParameters().toString());
         out.writeObject(this.getParameters());
     }
     

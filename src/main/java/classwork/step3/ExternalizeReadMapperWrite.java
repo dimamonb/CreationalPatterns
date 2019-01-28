@@ -20,10 +20,12 @@ public class ExternalizeReadMapperWrite {
 		
 		String fileName = "temp.step3.out";
 		
+		System.out.println("Читаем из файла " + fileName);
 		FileInputStream fileInputStream = new FileInputStream(fileName);
 		ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
 		
 		Fallback business = (Fallback)objectInputStream.readObject();
+		System.out.println("Данные считаны\n" + business.toString());
 		
 		ObjectMapper mapper = new ObjectMapper();
 		System.out.println("Записываем данные в файла " + RESULT_PARAMETERS_STEP_3_JSON);

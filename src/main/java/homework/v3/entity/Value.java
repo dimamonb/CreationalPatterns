@@ -11,7 +11,6 @@ public class Value implements Serializable {
     public String getValue() {
         return value;
     }
-
     public void setValue(String value) {
         this.value = value;
     }

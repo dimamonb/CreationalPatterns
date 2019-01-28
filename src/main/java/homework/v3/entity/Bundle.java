@@ -13,7 +13,6 @@ public class Bundle implements Serializable {
     public List<Path> getPath() {
         return path;
     }
-
     public void setPath(List<Path> path) {
         this.path = path;
     }
@@ -21,7 +20,6 @@ public class Bundle implements Serializable {
     public List<String> getValues() {
         return values;
     }
-
     public void setValues(List<String> values) {
         this.values = values;
     }

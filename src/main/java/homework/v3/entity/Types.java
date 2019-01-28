@@ -3,6 +3,7 @@ package homework.v3.entity;
 import java.io.Serializable;
 
 public enum Types  implements Serializable {
+    
     STRING("STRING"),
     BOOLEAN("BOOLEAN"),
     LONG("LONG");

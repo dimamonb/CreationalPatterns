@@ -55,14 +55,18 @@ public class Parameter implements Externalizable {
                        ", path=" + path +
                        ", type='" + type + '\'' +
                        ", values=" + values +
-                       '}';
+                       '}' + "\n";
     }
     
     List<String> values;
     
     @Override
     public void writeExternal(ObjectOutput out) throws IOException {
-    
+        System.out.println(
+                "Имя параметра: " + this.getName() +
+                        ". Путь к параметру " + this.getPath() +
+                        ". Тип параметра " + this.getType() +
+                        ". Значения параметра + " + this.getValues());
         out.writeObject(this.getName());
         out.writeObject(this.getPath());
         out.writeObject(this.getType());
@@ -72,7 +76,6 @@ public class Parameter implements Externalizable {
     
     @Override
     public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
-    
         this.setName((String)in.readObject());
         this.setPath((List<Path>)in.readObject());
         this.setType((String)in.readObject());

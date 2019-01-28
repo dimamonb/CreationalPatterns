@@ -21,7 +21,7 @@ public class Path  implements Externalizable {
         return "Path{" +
                        "name='" + name + '\'' +
                        ", value='" + value + '\'' +
-                       '}';
+                       '}' + "\n";
     }
     
     public void setName(String name) {
@@ -38,6 +38,7 @@ public class Path  implements Externalizable {
     
     @Override
     public void writeExternal(ObjectOutput out) throws IOException {
+        System.out.println("Пишем поле с именем " + this.getName() + " и значением " + this.getValue());
         out.writeObject(this.getName());
         out.writeObject(this.getValue());
     }

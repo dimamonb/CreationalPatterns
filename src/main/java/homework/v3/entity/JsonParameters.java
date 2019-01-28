@@ -5,12 +5,6 @@ import org.codehaus.jackson.annotate.JsonPropertyOrder;
 import java.io.Serializable;
 import java.util.List;
 
-//@JsonPropertyOrder({ "name", "id" })
-//public class MyBean {
-//    public int id;
-//    public String name;
-//}
-
 @JsonPropertyOrder({"name", "description", "isList", "roles", "type", "bundle"})
 public class JsonParameters implements Serializable {
     

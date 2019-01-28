@@ -11,9 +11,7 @@ public class JsonFileClass implements Serializable{
     
     private String version;
     public List<JsonParameters> parameters;
-
-
-
+    
     @Override
     public String toString() {
         return this.version + "\n" + this.parameters;
@@ -30,7 +28,6 @@ public class JsonFileClass implements Serializable{
     public void setParameters(List<JsonParameters> parameters) {
         this.parameters = parameters;
     }
-
     public List<JsonParameters> setParameters() {
         return this.parameters;
     }
