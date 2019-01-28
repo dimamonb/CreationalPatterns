@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Fallback implements Serializable{
     
-    private static final long serialVersionUID = 6762730540237282806L;
+    private static final long serialVersionUID = 1L;
     
     @Override
     public String toString() {

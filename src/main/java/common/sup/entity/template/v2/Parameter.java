@@ -1,13 +1,14 @@
 package common.sup.entity.template.v2;
 
 import org.codehaus.jackson.annotate.JsonGetter;
+import org.codehaus.jackson.annotate.JsonIgnore;
 
 import java.io.Serializable;
 import java.util.List;
 
 public class Parameter implements Serializable{
     
-    private static final long serialVersionUID = 42L;
+    private static final long serialVersionUID = 1L;
     
     public String getName() {
         return name;

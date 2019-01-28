@@ -1,6 +1,6 @@
 package step1;
 
-import common.sup.da.JsonParameterReader;
+import common.sup.da.v1.JsonParameterReader;
 import common.sup.da.v1.JsonParameterSerializeWriter;
 import common.sup.entity.template.v1.Fallback;
 
@@ -9,9 +9,11 @@ import common.sup.entity.template.v1.Fallback;
  * @date 03.04.2018
  */
 public class FileReadSerializeWrite {
-
-
-    /**
+	
+	
+	public static final String TEMP_V_1_OUT = "temp.v1.out";
+	
+	/**
      * Из файла parameters.json считываем данные
      * После сериазилуем в файл temp.out
      * Далее перегоняем потоком в result_parameters.json
@@ -33,9 +35,9 @@ public class FileReadSerializeWrite {
 	    System.out.println(business);
 
         JsonParameterSerializeWriter mySerializer = new JsonParameterSerializeWriter();
-	    System.out.println("Записываем данные в файла temp.out");
-        mySerializer.customSerializeWriter(business, "temp.out");
-	    System.out.println("Данные записаны на диск в файл temp.out");
+	    System.out.println("Записываем данные в файла " + TEMP_V_1_OUT);
+        mySerializer.customSerializeWriter(business, TEMP_V_1_OUT);
+	    System.out.println("Данные записаны на диск в файл " + TEMP_V_1_OUT);
 	
 
 	    
