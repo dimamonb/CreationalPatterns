@@ -17,7 +17,7 @@
         <property name = "password" value = "sa"/>
     </bean>
 
-    <bean id="OraDaService" class="common.sup.da.OraDaService">
+    <bean id="OraDaService" class="classwork.params.da.OraDaService">
         <property name="dataSource" ref="dataSource"/>
     </bean>
 

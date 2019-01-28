@@ -98,7 +98,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>step1.FileReadSerializeWrite</mainClass>
+                            <mainClass>classwork.step1.FileReadSerializeWrite</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
