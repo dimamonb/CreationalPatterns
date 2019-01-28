@@ -9,9 +9,11 @@ import common.sup.entity.template.v2.Fallback;
  * @date 03.04.2018
  */
 public class FileReadSerializeWrite {
-
-
-    /**
+	
+	
+	public static final String TEMP_V_2_OUT = "temp.v2.out";
+	
+	/**
      * Из файла parameters.json считываем данные
      * После сериазилуем в файл temp.out
      * Далее перегоняем потоком в result_parameters.json
@@ -33,9 +35,9 @@ public class FileReadSerializeWrite {
 	    System.out.println(business);
 
         JsonParameterSerializeWriter mySerializer = new JsonParameterSerializeWriter();
-	    System.out.println("Записываем данные в файла temp.out");
-        mySerializer.customSerializeWriter(business, "temp.out");
-	    System.out.println("Данные записаны на диск в файл temp.out");
+	    System.out.println("Записываем данные в файла " + TEMP_V_2_OUT);
+        mySerializer.customSerializeWriter(business, TEMP_V_2_OUT);
+	    System.out.println("Данные записаны на диск в файл " + TEMP_V_2_OUT);
 	
 
 	    
