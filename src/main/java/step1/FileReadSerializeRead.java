@@ -10,6 +10,8 @@ import java.io.IOException;
 
 /**
  * читаем из temp.out
+ *
+ * serializeReader -> objectMapper
  * */
 public class FileReadSerializeRead {
 	

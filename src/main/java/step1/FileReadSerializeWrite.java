@@ -21,6 +21,8 @@ public class FileReadSerializeWrite {
      * Смысл задания - сериализовать объект в файл.
      * Из файла считать - записать в новый файл и сравнить с исходным
      *
+	 * fileReader->serializeWriter
+	 *
      * */
     public static void main(String... args) throws Exception {
         
@@ -38,16 +40,6 @@ public class FileReadSerializeWrite {
 	    System.out.println("Записываем данные в файла " + TEMP_V_1_OUT);
         mySerializer.customSerializeWriter(business, TEMP_V_1_OUT);
 	    System.out.println("Данные записаны на диск в файл " + TEMP_V_1_OUT);
-	
-
 	    
-//        ObjectMapper mapper = new ObjectMapper();
-//        JsonFileClass jsonFileClass = new JsonFileClass();
-//        JsonParameterWriter parameterWriter = new JsonParameterWriter();
-//
-//        jsonFileClass.setVersion("1.0");
-//        jsonFileClass.setParameters(parameterWriter.write(business));
-//        mapper.writerWithDefaultPrettyPrinter().writeValue(new File("result_parameters.json"), jsonFileClass);
-//
     }
 }

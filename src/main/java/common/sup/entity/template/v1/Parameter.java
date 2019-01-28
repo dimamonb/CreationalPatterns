@@ -6,6 +6,9 @@ import java.io.Serializable;
 import java.util.List;
 
 public class Parameter implements Serializable{
+    
+    private static final long serialVersionUID = 1L;
+    
     public String getName() {
         return name;
     }
