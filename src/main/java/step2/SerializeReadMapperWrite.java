@@ -13,7 +13,7 @@ import java.io.IOException;
  *
  * serializeReader -> objectMapper
  * */
-public class FileReadSerializeRead {
+public class SerializeReadMapperWrite {
 	
 	public static final String RESULT_PARAMETERS_V_2_JSON = "result_parameters.v2.json";
 	
