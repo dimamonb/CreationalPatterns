@@ -7,6 +7,12 @@ import org.codehaus.jackson.map.ObjectMapper;
 import java.io.File;
 import java.io.IOException;
 
+
+/**
+ * читаем из temp.out
+ *
+ * serializeReader -> objectMapper
+ * */
 public class FileReadSerializeRead {
 	
 	public static final String RESULT_PARAMETERS_V_2_JSON = "result_parameters.v2.json";
