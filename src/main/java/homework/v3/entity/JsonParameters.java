@@ -1,4 +1,4 @@
-package homework.v3;
+package homework.v3.entity;
 
 import org.codehaus.jackson.annotate.JsonPropertyOrder;
 

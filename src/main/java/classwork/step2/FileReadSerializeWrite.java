@@ -28,7 +28,7 @@ public class FileReadSerializeWrite {
 	 * */
     public static void main(String... args) throws Exception {
         
-        String fileName = args[0];
+        String fileName = "parameters.v2.json";
 	
 	    JsonParameterReader service = new JsonParameterReader();
         Fallback business = null;

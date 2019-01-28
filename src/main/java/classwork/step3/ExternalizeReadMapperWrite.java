@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.ObjectInputStream;
 
 /**
- * temp.classwork.step3.out -> result_parameters.classwork.step3.json
+ * temp.step3.out -> result_parameters.step3.json
  * */
 
 public class ExternalizeReadMapperWrite {
@@ -18,7 +18,7 @@ public class ExternalizeReadMapperWrite {
 	
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		
-		String fileName = args[0];
+		String fileName = "temp.step3.out";
 		
 		FileInputStream fileInputStream = new FileInputStream(fileName);
 		ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);

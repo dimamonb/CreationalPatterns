@@ -9,13 +9,13 @@ import java.io.ObjectOutputStream;
 
 
 /**
- * parameters.classwork.step3.json -> temp.step3.out
+ * parameters.step3.json -> temp.step3.out
  * */
 public class FileReadExternalizeWrite {
 	
 	public static void main(String[] args) throws IOException {
 		
-		String fileName = args[0];
+		String fileName = "parameters.step3.json";
 		JsonParameterReader service = new JsonParameterReader();
 		Fallback parameterInfo = service.read(fileName);
 		

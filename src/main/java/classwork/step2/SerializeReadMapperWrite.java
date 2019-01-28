@@ -21,7 +21,7 @@ public class SerializeReadMapperWrite {
 	
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		
-		String fileName = args[0];
+		String fileName = "temp.v2.out";
 		
 		Fallback business = null;
 		System.out.println("Значение business: " + business);
