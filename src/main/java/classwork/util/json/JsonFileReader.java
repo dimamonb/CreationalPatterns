@@ -1,6 +1,6 @@
-package factory.method.util.json;
+package classwork.util.json;
 
-import factory.method.util.AbstractFileReader;
+import classwork.util.AbstractFileReader;
 import org.codehaus.jackson.map.ObjectMapper;
 
 public class JsonFileReader extends AbstractFileReader {

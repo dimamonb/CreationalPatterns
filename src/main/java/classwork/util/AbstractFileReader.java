@@ -1,6 +1,4 @@
-package factory.method.util;
-
-import org.codehaus.jackson.map.ObjectMapper;
+package classwork.util;
 
 public abstract class AbstractFileReader {
 	

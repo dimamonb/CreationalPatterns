@@ -1,9 +1,9 @@
-package factory.method.app;
+package factory.app;
 
-import factory.method.params.da.JsonParameterSerializeReader;
-import factory.method.params.entity.template.Fallback;
-import factory.method.util.AbstractFileWriter;
-import factory.method.util.factory.FileWriterFactory;
+import classwork.params.da.JsonParameterSerializeReader;
+import classwork.params.entity.template.Fallback;
+import classwork.util.AbstractFileWriter;
+import factory.method.FileWriterFactory;
 import java.io.IOException;
 
 
@@ -31,7 +31,6 @@ public class FileReadMapperWrite {
 		System.out.println("Значение business: " + business);
 		
 		FileWriterFactory writerFactory = FileWriterFactory.newFileWriterFactory(RESULT_PARAMETERS, business);
-		
 		AbstractFileWriter fileJsomWriter = writerFactory.fileWriter("json");
 		fileJsomWriter.writeFile();
 		

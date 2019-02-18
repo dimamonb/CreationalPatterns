@@ -1,4 +1,4 @@
-package factory.method.params.entity.template;
+package classwork.params.entity.template;
 
 import org.codehaus.jackson.annotate.JsonGetter;
 

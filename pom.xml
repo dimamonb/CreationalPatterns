@@ -98,7 +98,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>factory.method.app.FileReadSerializeWrite</mainClass>
+                            <mainClass>factory.app.FileReadSerializeWrite</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

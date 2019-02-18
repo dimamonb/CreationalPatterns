@@ -1,25 +1,26 @@
-package factory.method.util.json;
+package classwork.util.xml;
 
-import factory.method.params.entity.template.Fallback;
-import factory.method.util.AbstractFileWriter;
-import org.codehaus.jackson.map.ObjectMapper;
+import classwork.params.entity.template.Fallback;
+import classwork.util.AbstractFileWriter;
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
 import java.io.File;
 import java.io.IOException;
 
-public class JsonFileWriter extends AbstractFileWriter {
+
+public class XmlFileWriter extends AbstractFileWriter {
 	
 	private Fallback fallback;
 	
-	public JsonFileWriter(Object mapper, String fileName, Fallback fallback) {
+	public XmlFileWriter(Object mapper, String fileName, Fallback fallback) {
 		super(mapper, fileName);
 		this.fallback = fallback;
 	}
 	
+	
 	@Override
 	public void writeFile() {
-		
-		ObjectMapper o = (ObjectMapper)mapper;
+		XmlMapper o = (XmlMapper)mapper;
 		
 		System.out.println("Записываем данные в файла " + fileName);
 		try {
@@ -28,7 +29,5 @@ public class JsonFileWriter extends AbstractFileWriter {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-		
 	}
 }

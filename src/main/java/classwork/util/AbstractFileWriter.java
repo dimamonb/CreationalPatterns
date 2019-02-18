@@ -1,4 +1,4 @@
-package factory.method.util;
+package classwork.util;
 
 public abstract class AbstractFileWriter {
 	

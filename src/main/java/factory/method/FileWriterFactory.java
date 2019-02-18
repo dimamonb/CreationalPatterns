@@ -1,9 +1,9 @@
-package factory.method.util.factory;
+package factory.method;
 
-import factory.method.params.entity.template.Fallback;
-import factory.method.util.AbstractFileWriter;
-import factory.method.util.json.JsonFileWriter;
-import factory.method.util.xml.XmlFileWriter;
+import classwork.params.entity.template.Fallback;
+import classwork.util.AbstractFileWriter;
+import classwork.util.json.JsonFileWriter;
+import classwork.util.xml.XmlFileWriter;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import org.codehaus.jackson.map.ObjectMapper;
 
@@ -18,10 +18,11 @@ public class FileWriterFactory {
 	}
 	
 	public AbstractFileWriter fileWriter(String typeFile){
-		if (typeFile.equals("json")){
-			return new JsonFileWriter(new ObjectMapper(), fileName + typeFile, fallback);
-		} else {
-			return new XmlFileWriter(new XmlMapper(), fileName + typeFile, fallback);
+		switch (typeFile){
+			case "json":
+				return new JsonFileWriter(new ObjectMapper(), fileName + typeFile, fallback);
+			default:
+				return new XmlFileWriter(new XmlMapper(), fileName + typeFile, fallback);
 		}
 	}
 	
