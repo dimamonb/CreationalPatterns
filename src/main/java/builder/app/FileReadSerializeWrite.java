@@ -26,7 +26,7 @@ public class FileReadSerializeWrite {
 	 *
      * */
 	
-	//todo нужно реализовать паттерн фабричный метод для считывания из файлов разного формата
+	//todo нужно реализовать паттерн строитель для считывания из файлов разного формата
     public static void main(String... args) throws Exception {
         
         String fileName = "parameters.v1.json";

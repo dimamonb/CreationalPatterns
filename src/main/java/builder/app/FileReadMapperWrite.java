@@ -4,7 +4,6 @@ import builder.method.FileWriterBuilder;
 import classwork.params.da.JsonParameterSerializeReader;
 import classwork.params.entity.template.Fallback;
 import classwork.util.AbstractFileWriter;
-import factory.method.FileWriterFactory;
 
 import java.io.IOException;
 
@@ -45,7 +44,5 @@ public class FileReadMapperWrite {
 				                                   .feelFileType("xml")
 				                                   .build();
 		fileXmlWriter.writeFile();
-		
 	}
-	
 }
