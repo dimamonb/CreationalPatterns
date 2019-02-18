@@ -1,6 +1,6 @@
-package classwork.params.da.v1;
+package classwork.params.da;
 
-import classwork.params.entity.template.v1.Fallback;
+import classwork.params.entity.template.Fallback;
 import org.codehaus.jackson.map.ObjectMapper;
 
 import java.io.File;

@@ -1,4 +1,4 @@
-package classwork.params.entity.template.v2;
+package classwork.params.entity.template;
 
 import org.codehaus.jackson.annotate.JsonGetter;
 

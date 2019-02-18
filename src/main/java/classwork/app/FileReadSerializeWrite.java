@@ -1,8 +1,8 @@
-package classwork.step1;
+package classwork.app;
 
-import classwork.params.da.v1.JsonParameterReader;
-import classwork.params.da.v1.JsonParameterSerializeWriter;
-import classwork.params.entity.template.v1.Fallback;
+import classwork.params.da.JsonParameterReader;
+import classwork.params.da.JsonParameterSerializeWriter;
+import classwork.params.entity.template.Fallback;
 
 /**
  * @author Evgeni Korolev <SBT-Korolev-EE@mail.ca.sbrf.ru>

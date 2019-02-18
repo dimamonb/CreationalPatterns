@@ -1,10 +1,9 @@
-package classwork.step1;
+package classwork.app;
 
-import classwork.params.da.v1.JsonParameterSerializeReader;
-import classwork.params.entity.template.v1.Fallback;
-import org.codehaus.jackson.map.ObjectMapper;
-
-import java.io.File;
+import classwork.params.da.JsonParameterSerializeReader;
+import classwork.params.entity.template.Fallback;
+import classwork.util.AbstractFileWriter;
+import classwork.util.factory.FileWriterFactory;
 import java.io.IOException;
 
 
@@ -17,7 +16,7 @@ import java.io.IOException;
  * */
 public class FileReadMapperWrite {
 	
-	public static final String RESULT_PARAMETERS_V_1_JSON = "result_parameters.v1.json";
+	public static final String RESULT_PARAMETERS = "result_parameters.v1.";
 	
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		
@@ -31,10 +30,14 @@ public class FileReadMapperWrite {
 		System.out.println("Данные считаны с диска из файл " + fileName);
 		System.out.println("Значение business: " + business);
 		
-		ObjectMapper mapper = new ObjectMapper();
-		System.out.println("Записываем данные в файла " + RESULT_PARAMETERS_V_1_JSON);
-		mapper.writerWithDefaultPrettyPrinter().writeValue(new File(RESULT_PARAMETERS_V_1_JSON), business);
-		System.out.println("Данные записаны на диск в файл " + RESULT_PARAMETERS_V_1_JSON);
+		FileWriterFactory writerFactory = FileWriterFactory.newFileWriterFactory(RESULT_PARAMETERS, business);
+		
+		AbstractFileWriter fileJsomWriter = writerFactory.fileWriter("json");
+		fileJsomWriter.writeFile();
+		
+		AbstractFileWriter fileXmlWriter = writerFactory.fileWriter("xml");
+		fileXmlWriter.writeFile();
+		
 	}
 	
 }
