@@ -1,9 +1,9 @@
-package classwork.util.factory;
+package factory.method.util.factory;
 
-import classwork.params.entity.template.Fallback;
-import classwork.util.AbstractFileWriter;
-import classwork.util.json.JsonFileWriter;
-import classwork.util.xml.XmlFileWriter;
+import factory.method.params.entity.template.Fallback;
+import factory.method.util.AbstractFileWriter;
+import factory.method.util.json.JsonFileWriter;
+import factory.method.util.xml.XmlFileWriter;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import org.codehaus.jackson.map.ObjectMapper;
 

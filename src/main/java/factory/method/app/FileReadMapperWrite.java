@@ -1,9 +1,9 @@
-package classwork.app;
+package factory.method.app;
 
-import classwork.params.da.JsonParameterSerializeReader;
-import classwork.params.entity.template.Fallback;
-import classwork.util.AbstractFileWriter;
-import classwork.util.factory.FileWriterFactory;
+import factory.method.params.da.JsonParameterSerializeReader;
+import factory.method.params.entity.template.Fallback;
+import factory.method.util.AbstractFileWriter;
+import factory.method.util.factory.FileWriterFactory;
 import java.io.IOException;
 
 

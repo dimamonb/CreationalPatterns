@@ -1,4 +1,4 @@
-package classwork.params.entity.template;
+package factory.method.params.entity.template;
 
 import java.io.Serializable;
 

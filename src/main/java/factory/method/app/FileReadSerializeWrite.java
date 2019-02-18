@@ -1,8 +1,8 @@
-package classwork.step2;
+package factory.method.app;
 
-import classwork.params.da.v2.JsonParameterReader;
-import classwork.params.da.v2.JsonParameterSerializeWriter;
-import classwork.params.entity.template.v2.Fallback;
+import factory.method.params.da.JsonParameterReader;
+import factory.method.params.da.JsonParameterSerializeWriter;
+import factory.method.params.entity.template.Fallback;
 
 /**
  * @author Evgeni Korolev <SBT-Korolev-EE@mail.ca.sbrf.ru>
@@ -11,7 +11,7 @@ import classwork.params.entity.template.v2.Fallback;
 public class FileReadSerializeWrite {
 	
 	
-	public static final String TEMP_V_2_OUT = "temp.v2.out";
+	public static final String TEMP_V_1_OUT = "temp.v1.out";
 	
 	/**
      * Из файла parameters.json считываем данные
@@ -20,15 +20,16 @@ public class FileReadSerializeWrite {
      *
      * Смысл задания - сериализовать объект в файл.
      * Из файла считать - записать в новый файл и сравнить с исходным
-	 *
+     *
 	 * fileReader->serializeWriter
+	 * parameters.v1.json -> temp.v1.out
 	 *
-	 * parameters.v2.json -> temp.v2.out
-	 *
-	 * */
+     * */
+	
+	//todo нужно реализовать паттерн фабричный метод для считывания из файлов разного формата
     public static void main(String... args) throws Exception {
         
-        String fileName = "parameters.v2.json";
+        String fileName = "parameters.v1.json";
 	
 	    JsonParameterReader service = new JsonParameterReader();
         Fallback business = null;
@@ -39,9 +40,9 @@ public class FileReadSerializeWrite {
 	    System.out.println(business);
 
         JsonParameterSerializeWriter mySerializer = new JsonParameterSerializeWriter();
-	    System.out.println("Записываем данные в файла " + TEMP_V_2_OUT);
-        mySerializer.customSerializeWriter(business, TEMP_V_2_OUT);
-	    System.out.println("Данные записаны на диск в файл " + TEMP_V_2_OUT);
+	    System.out.println("Записываем данные в файла " + TEMP_V_1_OUT);
+        mySerializer.customSerializeWriter(business, TEMP_V_1_OUT);
+	    System.out.println("Данные записаны на диск в файл " + TEMP_V_1_OUT);
 	    
     }
 }

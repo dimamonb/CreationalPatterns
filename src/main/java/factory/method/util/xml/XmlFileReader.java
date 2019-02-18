@@ -1,6 +1,6 @@
-package classwork.util.xml;
+package factory.method.util.xml;
 
-import classwork.util.AbstractFileReader;
+import factory.method.util.AbstractFileReader;
 
 public class XmlFileReader extends AbstractFileReader {
 	
