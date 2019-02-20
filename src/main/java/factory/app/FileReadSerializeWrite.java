@@ -3,6 +3,8 @@ package factory.app;
 import classwork.params.da.JsonParameterReader;
 import classwork.params.da.JsonParameterSerializeWriter;
 import classwork.params.entity.template.Fallback;
+import classwork.util.AbstractFileReader;
+import factory.method.FileReaderFactory;
 
 /**
  * @author Evgeni Korolev <SBT-Korolev-EE@mail.ca.sbrf.ru>
@@ -27,22 +29,19 @@ public class FileReadSerializeWrite {
      * */
 	
 	//todo нужно реализовать паттерн фабричный метод для считывания из файлов разного формата
+	public static final String RESULT_PARAMETERS = "result_parameters.v1.";
     public static void main(String... args) throws Exception {
         
-        String fileName = "parameters.v1.json";
-	
-	    JsonParameterReader service = new JsonParameterReader();
-        Fallback business = null;
-	    System.out.println("Значение business: " + business);
-	    System.out.println("Считываем данные из файла " + fileName);
-        business = service.read(fileName);
-	    System.out.println("Данные считаны:");
-	    System.out.println(business);
 
-        JsonParameterSerializeWriter mySerializer = new JsonParameterSerializeWriter();
-	    System.out.println("Записываем данные в файла " + TEMP_V_1_OUT);
-        mySerializer.customSerializeWriter(business, TEMP_V_1_OUT);
-	    System.out.println("Данные записаны на диск в файл " + TEMP_V_1_OUT);
-	    
+	
+	    FileReaderFactory readFactory = FileReaderFactory.newFileReaderFactory(RESULT_PARAMETERS,new Fallback());
+		AbstractFileReader jsonReader = readFactory.fileReader("json");
+		jsonReader.readFile();
+
+		System.out.println();
+
+		AbstractFileReader xmlReader = readFactory.fileReader("xml");
+		xmlReader.readFile();
+
     }
 }
