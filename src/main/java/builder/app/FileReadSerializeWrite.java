@@ -1,5 +1,6 @@
 package builder.app;
 
+import builder.method.FileReaderBuilder;
 import classwork.params.da.JsonParameterReader;
 import classwork.params.da.JsonParameterSerializeWriter;
 import classwork.params.entity.template.Fallback;
@@ -30,7 +31,9 @@ public class FileReadSerializeWrite {
     public static void main(String... args) throws Exception {
         
         String fileName = "parameters.v1.json";
-	
+
+		String fileName2 = "parameters.v1.";
+
 	    JsonParameterReader service = new JsonParameterReader();
         Fallback business = null;
 	    System.out.println("Значение business: " + business);
@@ -43,6 +46,15 @@ public class FileReadSerializeWrite {
 	    System.out.println("Записываем данные в файла " + TEMP_V_1_OUT);
         mySerializer.customSerializeWriter(business, TEMP_V_1_OUT);
 	    System.out.println("Данные записаны на диск в файл " + TEMP_V_1_OUT);
+
+		FileReaderBuilder readerBuilder = new FileReaderBuilder().build()
+				.buildFileName(fileName2)
+				.buildFallback(business)
+				.buildFileType("json");
+
+		readerBuilder.factoryReader();
+
+		System.out.println(readerBuilder.factoryReader());
 	    
     }
 }
